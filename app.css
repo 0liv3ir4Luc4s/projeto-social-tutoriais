@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+.divInclinada {
+  background: #282828;
+  color: #fff;
+  padding: 30px;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.divInclinada::after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  top:  0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform-origin: top left;
+  transform: skewY(2deg);
+}
+
+.divInclinadaB::before {
+  position: absolute;
+  content: "";
+  background: inherit;
+  top:  0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform-origin: bottom right;
+  transform: skewY(2deg); 
+}
