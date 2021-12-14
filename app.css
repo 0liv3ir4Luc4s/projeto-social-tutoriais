@@ -1,0 +1,25 @@
+img {
+	position: relative;
+	z-index: -1;
+	width: 100%;
+}
+.container {
+	position: relative;
+	width: 50%;
+}
+.legenda h1 {
+	color: #fff;
+	margin: 0;
+}
+.legenda {
+	visibility: hidden;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+.container:hover .legenda {
+	visibility: visible;
+}
+.container:hover {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000000 100%);
+}
