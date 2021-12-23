@@ -1,0 +1,48 @@
+/* 	CONFIGURAÇÕES INICIAIS */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	padding: 20px;
+}	
+#content-flex, #content-grid, #content-position {
+	width: 100%;
+	height: 200px;
+	
+	background: #d63031;
+	
+	padding: 10px;
+	margin-bottom: 20px;
+}
+#box-flex, #box-grid, #box-position {
+	width: 200px;
+	height: 100%;
+	
+	background: #0984e3;
+}
+
+/* CENTRALIZAÇÃO COM FLEX BOX*/
+
+#content-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* CENTRALIZAÇÃO COM GRIDS */
+
+#content-grid {
+	display: grid;
+	place-items: center;
+}
+
+/* CENTRALIZAÇÃO COM POSITION */
+
+#box-position {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
